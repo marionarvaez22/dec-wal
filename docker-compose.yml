@@ -1,0 +1,10 @@
+version: "1.0"
+
+services:
+  wall:
+    build: ./
+    command: "npm run start"
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/var/www/the-december-wall
